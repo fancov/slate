@@ -331,6 +331,14 @@
           <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
+          <li>
+            <a href="#e4ea62f6c7" class="toc-h1 toc-link" data-title="测试部署">测试部署</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#71dd9263e9" class="toc-h2 toc-link" data-title="分文件">分文件</a>
+                  </li>
+              </ul>
+          </li>
       </ul>
         <ul class="toc-footer">
             <li><a href='#'>Sign Up for a Developer Key</a></li>
@@ -577,6 +585,11 @@ This error section is stored in a separate file in <code>includes/_errors.md</co
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
+<h1 id='e4ea62f6c7'>测试部署</h1><h3 id='71dd9263e9'>分文件</h3><h4 id='test-md-includes-index-html-md'>要把test.md放到includes文件夹，然后在index.html.md中添加</h4><div class="highlight"><pre class="highlight plaintext"><code>includes:
+  - test
+</code></pre></div>
+<p>注意如果不要加后缀 .md, 如果文件名中有下划线，如_test.md,那么忽略掉下划线，<br>
+还是添加上面内容</p>
 
       </div>
       <div class="dark-box">

@@ -1,0 +1,5 @@
+<h1 id='e4ea62f6c7'>测试部署</h1><h3 id='71dd9263e9'>分文件</h3><h4 id='test-md-includes-index-html-md'>要把test.md放到includes文件夹，然后在index.html.md中添加</h4><div class="highlight"><pre class="highlight plaintext"><code>includes:
+  - test
+</code></pre></div>
+<p>注意如果不要加后缀 .md, 如果文件名中有下划线，如_test.md,那么忽略掉下划线，<br>
+还是添加上面内容</p>
