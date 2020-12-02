@@ -1,0 +1,52 @@
+<h1 id='room'>Room</h1><h2 id='get-room-stat-to-external-application'>Get room stat to external application</h2><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
+<span class="n">url</span> <span class="o">=</span> <span class="s">'/external-api/v2/shtvu/room/stat?room_code=11&amp;app_key=1234567890&amp;ts=1234567890'</span>
+<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
+<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">content</span><span class="p">())</span>
+
+</code></pre></div>
+<blockquote>
+<p>The above command returns JSON structured like this:</p>
+</blockquote>
+<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"attendance_stat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"attendance_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"attendance_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"student_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
+  </span><span class="p">},</span><span class="w">
+  </span><span class="nl">"course_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"测试模版课程1"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"course_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-29T02:00:00Z - 2019-10-29T14:00:00Z"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"instructors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"interaction_stat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+    </span><span class="nl">"interaction_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"interaction_rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
+  </span><span class="p">}</span><span class="w">
+</span><span class="p">}</span><span class="w">
+
+</span></code></pre></div>
+<p>This endpoint retrieves all kittens.</p>
+<h3 id='http-request'>HTTP Request</h3>
+<p><code>GET /external-api/v2/shtvu/room/stat?room_code=11&amp;app_key=1234567890&amp;ts=1234567890</code></p>
+<h3 id='query-parameters'>Query Parameters</h3>
+<table><thead>
+<tr>
+<th>Parameter</th>
+<th>Default</th>
+<th>Description</th>
+</tr>
+</thead><tbody>
+<tr>
+<td>app_key</td>
+<td></td>
+<td>我方提供给贵方的app_key</td>
+</tr>
+<tr>
+<td>ts</td>
+<td></td>
+<td>timestamp, 详细请见实例代码</td>
+</tr>
+<tr>
+<td>token</td>
+<td></td>
+<td>token, 详细请见实例代码</td>
+</tr>
+</tbody></table>
