@@ -24,9 +24,9 @@
 
 </span></code></pre></div>
 <p>This endpoint retrieves all kittens.</p>
-<h3 id='e2f1a8c28c'>目录三级</h3><h3 id='e2f1a8c28c-2'>目录三级</h3>
+<h3 id='d274eee8a1'>一</h3><h3 id='1d5639f716'>二</h3>
 <p><code>GET /external-api/v2/shtvu/room/stat?room_code=11&amp;app_key=1234567890&amp;ts=1234567890</code></p>
-<h3 id='e2f1a8c28c-3'>目录三级</h3>
+<h3 id='49ddb069d5'>三</h3>
 <table><thead>
 <tr>
 <th>Parameter</th>
