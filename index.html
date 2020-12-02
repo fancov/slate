@@ -328,6 +328,24 @@
               </ul>
           </li>
           <li>
+            <a href="#one" class="toc-h1 toc-link" data-title="one">one</a>
+              <ul class="toc-list-h2">
+                  <li>
+                    <a href="#two" class="toc-h2 toc-link" data-title="two">two</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#three" class="toc-h3 toc-link" data-title="three">three</a>
+                              <ul class="toc-list-h4">
+                                  <li>
+                                    <a href="#four" class="toc-h4 toc-link" data-title="four">four</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
+                  </li>
+              </ul>
+          </li>
+          <li>
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
           <li>
@@ -344,33 +362,21 @@
           </li>
           <li>
             <a href="#3801286cb3" class="toc-h1 toc-link" data-title="一级目录">一级目录</a>
-          </li>
-          <li>
-            <a href="#build-configuration" class="toc-h1 toc-link" data-title="Build Configuration">Build Configuration</a>
               <ul class="toc-list-h2">
                   <li>
                     <a href="#cc07401a0b" class="toc-h2 toc-link" data-title="二级目录">二级目录</a>
+                      <ul class="toc-list-h3">
+                          <li>
+                            <a href="#7adc0c0bbe" class="toc-h3 toc-link" data-title="三级目录">三级目录</a>
+                              <ul class="toc-list-h4">
+                                  <li>
+                                    <a href="#a5820edee3" class="toc-h4 toc-link" data-title="四级目录">四级目录</a>
+                                  </li>
+                              </ul>
+                          </li>
+                      </ul>
                   </li>
               </ul>
-          </li>
-          <li>
-            <a href="#build-configuration-2" class="toc-h1 toc-link" data-title="Build Configuration">Build Configuration</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#7adc0c0bbe" class="toc-h2 toc-link" data-title="三级目录">三级目录</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#build-configuration-3" class="toc-h1 toc-link" data-title="Build Configuration">Build Configuration</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#a5820edee3" class="toc-h2 toc-link" data-title="四级目录">四级目录</a>
-                  </li>
-              </ul>
-          </li>
-          <li>
-            <a href="#build-configuration-4" class="toc-h1 toc-link" data-title="Build Configuration">Build Configuration</a>
           </li>
       </ul>
     </div>
@@ -431,7 +437,7 @@
 <td>token, 详细请见实例代码</td>
 </tr>
 </tbody></table>
-<h1 id='errors'>Errors</h1>
+<h1 id='one'>one</h1><h2 id='two'>two</h2><h3 id='three'>three</h3><h4 id='four'>four</h4><h1 id='errors'>Errors</h1>
 <p>The Wisdom Garden API uses the following error codes:</p>
 
 <table><thead>
@@ -485,62 +491,105 @@
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
-<h1 id='accounts'>accounts</h1><h1 id='accounts-authentication'>accounts-authentication</h1><h1 id='requests'>requests</h1><h1 id='requests-authentication'>requests-authentication</h1><h1 id='3801286cb3'>一级目录</h1><h1 id='build-configuration'>Build Configuration</h1>
-<p>configure :build do
-  # We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
-  # woff asset hash which breaks things. Trying to use a combination of ignore and
-  # rewrite_ignore does not work as it conflicts weirdly with relative_assets. Disabling
-  # the .woff2 extension only does not work as .woff will still activate it so have to
-  # have both. See https://github.com/slatedocs/slate/issues/1171 for more details.
-  activate :asset_hash, :exts =&gt; app.config[:asset_extensions] - %w[.woff .woff2]
-  # If you&#39;re having trouble with Middleman hanging, commenting
-  # out the following two lines has been known to help
-  activate :minify_css
-  activate :minify_javascript
-  # activate :gzip
+<h1 id='accounts'>accounts</h1><h1 id='accounts-authentication'>accounts-authentication</h1><h1 id='requests'>requests</h1><h1 id='requests-authentication'>requests-authentication</h1><h1 id='3801286cb3'>一级目录</h1>
+<p>Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+end
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use</p>
+<h2 id='cc07401a0b'>二级目录</h2>
+<p>Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
 end</p>
-<h2 id='cc07401a0b'>二级目录</h2><h1 id='build-configuration-2'>Build Configuration</h1>
+<h3 id='7adc0c0bbe'>三级目录</h3>
+<p>Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use</p>
+
 <p>configure :build do
-  # We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
-  # woff asset hash which breaks things. Trying to use a combination of ignore and
-  # rewrite_ignore does not work as it conflicts weirdly with relative_assets. Disabling
-  # the .woff2 extension only does not work as .woff will still activate it so have to
-  # have both. See https://github.com/slatedocs/slate/issues/1171 for more details.
-  activate :asset_hash, :exts =&gt; app.config[:asset_extensions] - %w[.woff .woff2]
-  # If you&#39;re having trouble with Middleman hanging, commenting
-  # out the following two lines has been known to help
-  activate :minify_css
-  activate :minify_javascript
-  # activate :gzip
-end</p>
-<h3 id='7adc0c0bbe'>三级目录</h3><h1 id='build-configuration-3'>Build Configuration</h1>
-<p>configure :build do
-  # We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
-  # woff asset hash which breaks things. Trying to use a combination of ignore and
-  # rewrite_ignore does not work as it conflicts weirdly with relative_assets. Disabling
-  # the .woff2 extension only does not work as .woff will still activate it so have to
-  # have both. See https://github.com/slatedocs/slate/issues/1171 for more details.
-  activate :asset_hash, :exts =&gt; app.config[:asset_extensions] - %w[.woff .woff2]
-  # If you&#39;re having trouble with Middleman hanging, commenting
-  # out the following two lines has been known to help
-  activate :minify_css
-  activate :minify_javascript
-  # activate :gzip
-end</p>
-<h4 id='a5820edee3'>四级目录</h4><h1 id='build-configuration-4'>Build Configuration</h1>
-<p>configure :build do
-  # We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
-  # woff asset hash which breaks things. Trying to use a combination of ignore and
-  # rewrite_ignore does not work as it conflicts weirdly with relative_assets. Disabling
-  # the .woff2 extension only does not work as .woff will still activate it so have to
-  # have both. See https://github.com/slatedocs/slate/issues/1171 for more details.
-  activate :asset_hash, :exts =&gt; app.config[:asset_extensions] - %w[.woff .woff2]
-  # If you&#39;re having trouble with Middleman hanging, commenting
-  # out the following two lines has been known to help
-  activate :minify_css
-  activate :minify_javascript
-  # activate :gzip
-end</p>
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use</p>
+<h4 id='a5820edee3'>四级目录</h4>
+<p>Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+Build Configuration
+configure :build do
+We do want to hash woff and woff2 as there&#39;s a bug where woff2 will use
+configure :build do</p>
 
       </div>
       <div class="dark-box">
