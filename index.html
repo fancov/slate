@@ -6,7 +6,6 @@
     <meta content="IE=edge,chrome=1" http-equiv="X-UA-Compatible">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>Wisdom Garden API Reference</title>
-    <link href="images/favicon-eeba0c84.ico" rel="icon" type="image/ico" />
 
     <style media="screen">
       .highlight table td { padding: 5px; }
@@ -332,32 +331,30 @@
             <a href="#errors" class="toc-h1 toc-link" data-title="Errors">Errors</a>
           </li>
           <li>
-            <a href="#e4ea62f6c7" class="toc-h1 toc-link" data-title="测试部署">测试部署</a>
-              <ul class="toc-list-h2">
-                  <li>
-                    <a href="#71dd9263e9" class="toc-h2 toc-link" data-title="分文件">分文件</a>
-                      <ul class="toc-list-h3">
-                          <li>
-                            <a href="#test-md-includes-index-html-md" class="toc-h3 toc-link" data-title="要把test.md放到includes文件夹，然后在index.html.md中添加">要把test.md放到includes文件夹，然后在index.html.md中添加</a>
-                          </li>
-                      </ul>
-                  </li>
-              </ul>
+            <a href="#accounts" class="toc-h1 toc-link" data-title="accounts">accounts</a>
           </li>
           <li>
-            <a href="#e2f74498d7" class="toc-h1 toc-link" data-title="目录一级">目录一级</a>
+            <a href="#accounts-authentication" class="toc-h1 toc-link" data-title="accounts-authentication">accounts-authentication</a>
+          </li>
+          <li>
+            <a href="#requests" class="toc-h1 toc-link" data-title="requests">requests</a>
+          </li>
+          <li>
+            <a href="#requests-authentication" class="toc-h1 toc-link" data-title="requests-authentication">requests-authentication</a>
+          </li>
+          <li>
+            <a href="#3801286cb3" class="toc-h1 toc-link" data-title="一级目录">一级目录</a>
               <ul class="toc-list-h2">
                   <li>
-                    <a href="#6b3c8f791d" class="toc-h2 toc-link" data-title="目录二级">目录二级</a>
+                    <a href="#cc07401a0b" class="toc-h2 toc-link" data-title="二级目录">二级目录</a>
                       <ul class="toc-list-h3">
                           <li>
-                            <a href="#d274eee8a1" class="toc-h3 toc-link" data-title="一">一</a>
-                          </li>
-                          <li>
-                            <a href="#1d5639f716" class="toc-h3 toc-link" data-title="二">二</a>
-                          </li>
-                          <li>
-                            <a href="#49ddb069d5" class="toc-h3 toc-link" data-title="三">三</a>
+                            <a href="#7adc0c0bbe" class="toc-h3 toc-link" data-title="三级目录">三级目录</a>
+                              <ul class="toc-list-h4">
+                                  <li>
+                                    <a href="#a5820edee3" class="toc-h4 toc-link" data-title="四级目录">四级目录</a>
+                                  </li>
+                              </ul>
                           </li>
                       </ul>
                   </li>
@@ -476,67 +473,7 @@
 <td>Service Unavailable -- We&#39;re temporarily offline for maintenance. Please try again later.</td>
 </tr>
 </tbody></table>
-<h1 id='e4ea62f6c7'>测试部署</h1><h3 id='71dd9263e9'>分文件</h3><h4 id='test-md-includes-index-html-md'>要把test.md放到includes文件夹，然后在index.html.md中添加</h4>
-<p><code>
-includes: <br/>
-&nbsp;&nbsp;- test<br>
-</code></p>
-
-<p>注意如果不要加后缀 .md, 如果文件名中有下划线，如_test.md,那么忽略掉下划线，<br>
-还是添加上面内容</p>
-<h1 id='e2f74498d7'>目录一级</h1><h2 id='6b3c8f791d'>目录二级</h2><div class="highlight"><pre class="highlight python tab-python"><code><span class="kn">import</span> <span class="nn">requests</span>
-<span class="n">url</span> <span class="o">=</span> <span class="s">'/external-api/v2/shtvu/room/stat?room_code=11&amp;app_key=1234567890&amp;ts=1234567890'</span>
-<span class="n">response</span> <span class="o">=</span> <span class="n">requests</span><span class="p">.</span><span class="n">get</span><span class="p">(</span><span class="n">url</span><span class="p">)</span>
-<span class="k">print</span><span class="p">(</span><span class="n">response</span><span class="p">.</span><span class="n">content</span><span class="p">())</span>
-
-</code></pre></div>
-<blockquote>
-<p>The above command returns JSON structured like this:</p>
-</blockquote>
-<div class="highlight"><pre class="highlight json tab-json"><code><span class="p">{</span><span class="w">
-  </span><span class="nl">"attendance_stat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"attendance_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"attendance_rate"</span><span class="p">:</span><span class="w"> </span><span class="mi">100</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"student_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">2</span><span class="w">
-  </span><span class="p">},</span><span class="w">
-  </span><span class="nl">"course_name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"测试模版课程1"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"course_time"</span><span class="p">:</span><span class="w"> </span><span class="s2">"2019-10-29T02:00:00Z - 2019-10-29T14:00:00Z"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"instructors"</span><span class="p">:</span><span class="w"> </span><span class="s2">"i"</span><span class="p">,</span><span class="w">
-  </span><span class="nl">"interaction_stat"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
-    </span><span class="nl">"interaction_count"</span><span class="p">:</span><span class="w"> </span><span class="mi">21</span><span class="p">,</span><span class="w">
-    </span><span class="nl">"interaction_rate"</span><span class="p">:</span><span class="w"> </span><span class="mf">1.1</span><span class="w">
-  </span><span class="p">}</span><span class="w">
-</span><span class="p">}</span><span class="w">
-
-</span></code></pre></div>
-<p>This endpoint retrieves all kittens.</p>
-<h3 id='d274eee8a1'>一</h3><h3 id='1d5639f716'>二</h3>
-<p><code>GET /external-api/v2/shtvu/room/stat?room_code=11&amp;app_key=1234567890&amp;ts=1234567890</code></p>
-<h3 id='49ddb069d5'>三</h3>
-<table><thead>
-<tr>
-<th>Parameter</th>
-<th>Default</th>
-<th>Description</th>
-</tr>
-</thead><tbody>
-<tr>
-<td>app_key</td>
-<td></td>
-<td>我方提供给贵方的app_key</td>
-</tr>
-<tr>
-<td>ts</td>
-<td></td>
-<td>timestamp, 详细请见实例代码</td>
-</tr>
-<tr>
-<td>token</td>
-<td></td>
-<td>token, 详细请见实例代码</td>
-</tr>
-</tbody></table>
-
+<h1 id='accounts'>accounts</h1><h1 id='accounts-authentication'>accounts-authentication</h1><h1 id='requests'>requests</h1><h1 id='requests-authentication'>requests-authentication</h1><h1 id='3801286cb3'>一级目录</h1><h2 id='cc07401a0b'>二级目录</h2><h3 id='7adc0c0bbe'>三级目录</h3><h4 id='a5820edee3'>四级目录</h4>
       </div>
       <div class="dark-box">
           <div class="lang-selector">
